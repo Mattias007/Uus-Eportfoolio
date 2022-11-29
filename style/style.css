@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Playfair Display';
+}
+
+body{
+ min-height: 100vh;
+ background-color: gray;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ flex-wrap: wrap;
+
+}
+
+
+header{
+
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header img{
+    width: 20%;
+    max-height: 100px;
+    max-width: 200px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+header div div {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(70, 70, 70);
+  margin: 6px 0;
+}
+
+.headerbutton {
+  display: inline-block;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* header buttons */
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.navbar {
+    display: none;
+}
+  
+.change.navbar{
+    display: flex;
+    height: fit-content;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 10px;
+}
+
+nav a{
+    background-color: b;
+}
+
+
+.container{
+    display: flex;
+    background-color: black;
+    min-height: min-content;
+    min-width: min-content;
+    margin: 20px;
+    flex-grow: 1;
+    align-items: center;
+    flex-direction: column
+}
+
+.container img{
+    width: 100%;
+}
+
+.mainpagetext{
+    font-size: 20px;
+}
+
+.pdf{
+    height: 200px;
+    width: 200px;
+}
+
+footer{
+    width: 100%;
+    min-height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+footer a{
+  text-decoration: dotted;
+}
+
+
+iframe{
+    width:100%;
+    height: 100%;
+}
+.Iframegrid{
+    max-width: 2048px;
+    display: grid;
+    width: 100%;
+    gap: 5px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 800px;
+}
+
+.elonmusktextcontainer{
+    display: flex;
+    height: 500px;
+    max-width: 1024px;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+}
+
+@media(min-width: 1024px) {
+    .Iframegrid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
